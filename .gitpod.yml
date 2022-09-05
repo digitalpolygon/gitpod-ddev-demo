@@ -31,7 +31,6 @@ jetbrains:
 github:
   prebuilds:
     master: true
-    addLabel: prebuilt-in-gitpod
     pullRequests: true
 
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
