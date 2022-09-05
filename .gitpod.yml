@@ -4,8 +4,29 @@ image:
 tasks:
   - name: 'DDEV Initialization'
     init: ddev debug download-images
-    command: ddev start
+    command: |
+      export DDEV_NONINTERACTIVE=true
+      ddev start
 
+jetbrains:
+  phpstorm:
+    prebuilds:
+      version: stable
+    plugins:
+      # .env files support
+      - ru.adelf.idea.dotenv
+      # Symfony Support
+      - fr.adrienbrault.idea.symfony2plugin
+      # Makefile Language
+      - name.kropp.intellij.makefile
+      # *.ignore
+      - mobi.hsz.idea.gitignore
+      # Drupal Symfony Bridge
+      - de.espend.idea.php.drupal
+      # Node.js Remote Interpreter
+      - org.jetbrains.plugins.node-remote-interpreter
+      # MDX file support
+      - mdx.js
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
   # Ignore direct-build https port
