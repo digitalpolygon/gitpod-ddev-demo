@@ -28,6 +28,12 @@ jetbrains:
       # MDX file support
       - mdx.js
 
+github:
+  prebuilds:
+    master: true
+    addLabel: prebuilt-in-gitpod
+    pullRequests: true
+
 # List the ports to expose. Learn more https://www.gitpod.io/docs/config-ports/
 ports:
   # Ignore direct-build https port
