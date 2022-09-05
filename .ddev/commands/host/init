@@ -1,0 +1,18 @@
+#!/bin/bash
+
+## Description: Initialize application.
+## Usage: init
+## Example: ddev init
+
+# This can't work unless you have a solr service,
+# See https://ddev.readthedocs.io/en/stable/users/extend/additional-services/
+
+# Tear down and startup environment.
+ddev stop -OR
+ddev start
+
+# Ensure application dependencies are installed.
+ddev composer install --no-interaction
+
+# Install application.
+ddev exec -- drush site:install --existing-config --no-interaction
