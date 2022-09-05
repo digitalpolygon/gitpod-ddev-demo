@@ -3,7 +3,9 @@ image:
 
 tasks:
   - name: 'DDEV Initialization'
-    init: ddev debug download-images
+    init: |
+      export DDEV_NONINTERACTIVE=true
+      ddev init
     command: |
       export DDEV_NONINTERACTIVE=true
       ddev start
