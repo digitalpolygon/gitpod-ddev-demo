@@ -1,0 +1,24 @@
+#!/bin/bash
+
+## Description: List site links
+## Usage: list-site-links
+## Example: ddev list-site-links
+
+if [ -z "$GITPOD_WORKSPACE_ID" ]; then
+  default_site="$DDEV_PROJECT"
+  multisite_site="multidev.ddev.site"
+  multisite_alias="@multisite"
+else
+  suffix="$GITPOD_WORKSPACE_ID.$GITPOD_WORKSPACE_CLUSTER_HOST"
+  default_site="8080-$suffix"
+  multisite_site="8081-$suffix"
+  multisite_alias="@gitpod.multisite"
+fi
+
+echo "Site links"
+echo "default:   https://$default_site/"
+echo "multisite: https://$multisite_site/"
+echo ""
+echo "Login links"
+echo "default:   $(drush uli)"
+echo "multisite: $(drush "$multisite_alias" uli)"
