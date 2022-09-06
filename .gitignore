@@ -1,4 +1,5 @@
 .idea
+.ddev/docker-compose.local.yaml
 web/core
 web/modules/contrib
 web/themes/contrib
