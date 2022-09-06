@@ -1,0 +1,9 @@
+version: "3.6"
+
+services:
+  web:
+    ports:
+      - 8081:80
+    environment:
+      - GITPOD_WORKSPACE_ID
+      - GITPOD_WORKSPACE_CLUSTER_HOST
