@@ -1,0 +1,3 @@
+multisite:
+  uri: https://8081-${env.GITPOD_WORKSPACE_ID}.${env.GITPOD_WORKSPACE_CLUSTER_HOST}
+  root: /var/www/html/web
