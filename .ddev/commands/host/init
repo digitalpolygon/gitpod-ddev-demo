@@ -14,5 +14,6 @@ ddev start
 # Ensure application dependencies are installed.
 ddev composer install --no-interaction
 
-# Install application.
+# Install application(s).
 ddev exec -- drush site:install --existing-config --no-interaction
+ddev exec -- drush --uri=multisite site:install --existing-config --no-interaction
