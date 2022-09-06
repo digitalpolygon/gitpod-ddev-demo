@@ -5,7 +5,8 @@ webserver_type: nginx-fpm
 router_http_port: "80"
 router_https_port: "443"
 xdebug_enabled: false
-additional_hostnames: []
+additional_hostnames:
+  - multisite
 additional_fqdns: []
 database:
   type: mariadb
@@ -16,6 +17,9 @@ use_dns_when_possible: true
 composer_version: "2"
 web_environment: []
 nodejs_version: "16"
+hooks:
+  post-start:
+    - exec: mysql -uroot -proot -hdb -e "CREATE DATABASE IF NOT EXISTS multisite; GRANT ALL ON multisite.* TO 'db'@'%';"
 
 # Key features of ddev's config.yaml:
 
