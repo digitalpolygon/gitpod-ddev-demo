@@ -1,0 +1,3 @@
+multisite:
+  uri: https://multidev.ddev.site
+  root: /var/www/html/web
