@@ -17,3 +17,9 @@ solution that combines Gitpod, DDEV, JetBrains IDEs, and Drupal (plus multisite)
 4. When prompted, allow the browser to open the JetBrains Gateway client on your system.
 5. In the terminal run `ddev list-site-links` to get links to the homepage for both sites, and login links.
 6. Start developing on a completely initialized application.
+
+## Summary
+
+A complete development environment allowing remote use of JetBrains' PHPStorm. Workspaces are prebuilt from the latest `main` (or the tip of an open pull request branch) so when starting a new branch of work, or reviewing a pull request, you are starting from an already initialized application, ready to go, no extra steps needed.
+
+![Screenshot of PHPStorm after connecting through Gateway client.](https://user-images.githubusercontent.com/419534/188730200-f52f8fcc-e6a8-48c0-8209-c761f48dfefc.png)
