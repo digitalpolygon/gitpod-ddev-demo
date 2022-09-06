@@ -18,6 +18,8 @@ jetbrains:
     plugins:
       # .env files support
       - ru.adelf.idea.dotenv
+      # PHP Annotations
+      - de.espend.idea.php.annotation
       # Symfony Support
       - fr.adrienbrault.idea.symfony2plugin
       # Makefile Language
