@@ -10,6 +10,7 @@ tasks:
     command: |
       export DDEV_NONINTERACTIVE=true
       ddev start
+      ddev list-site-links
 
 jetbrains:
   phpstorm:
