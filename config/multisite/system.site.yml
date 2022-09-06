@@ -2,7 +2,7 @@ _core:
   default_config_hash: VDJxTZtQR21qB4lvOq8zszJZLvLKrSPQpdn2E3T71Ww
 langcode: en
 uuid: 3320b28a-ecea-4b6a-b224-f844e31f5b58
-name: 'Main Site Install'
+name: 'Multisite Site Install'
 mail: admin@example.com
 slogan: ''
 page:

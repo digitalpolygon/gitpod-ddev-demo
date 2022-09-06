@@ -1,0 +1,16 @@
+uuid: 7e73f2a9-49f3-4248-9962-748bca135e70
+langcode: en
+status: false
+dependencies: {  }
+id: multisite
+label: Multisite
+description: ''
+weight: 0
+folder: ../config/multisite
+module: {  }
+theme: {  }
+blacklist: {  }
+graylist:
+  - system.site
+graylist_dependents: false
+graylist_skip_equal: true
