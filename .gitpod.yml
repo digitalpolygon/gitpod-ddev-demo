@@ -6,6 +6,7 @@ tasks:
     init: |
       export DDEV_NONINTERACTIVE=true
       ddev init
+      ddev stop -O
     command: |
       export DDEV_NONINTERACTIVE=true
       ddev start
