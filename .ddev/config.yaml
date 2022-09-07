@@ -17,6 +17,8 @@ use_dns_when_possible: true
 composer_version: "2"
 web_environment: []
 nodejs_version: "16"
+omit_containers:
+  - dba
 hooks:
   post-start:
     - exec: mysql -uroot -proot -hdb -e "CREATE DATABASE IF NOT EXISTS multisite; GRANT ALL ON multisite.* TO 'db'@'%';"
