@@ -7,10 +7,12 @@ tasks:
       export DDEV_NONINTERACTIVE=true
       ddev init
       ddev stop -O
+      env
     command: |
       export DDEV_NONINTERACTIVE=true
       ddev start
       ddev list-site-links
+      env
 
 jetbrains:
   phpstorm:
