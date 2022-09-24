@@ -1,0 +1,23 @@
+name: Security
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: '0 3 * * *'
+
+jobs:
+  composer:
+    name: Composer
+    runs-on: ubuntu-latest
+    steps:
+      - name: The PHP Security Checker
+        uses: symfonycorp/security-checker-action@v3
+  drupal:
+    name: Drupal
+    runs-on: ubuntu-latest
+    steps:
+      - name: Drupal package security scanner
+        uses: lpeabody/drupal-security-action@1.0.0
