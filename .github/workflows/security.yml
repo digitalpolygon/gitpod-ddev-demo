@@ -13,11 +13,15 @@ jobs:
     name: Composer
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: The PHP Security Checker
         uses: symfonycorp/security-checker-action@v3
   drupal:
     name: Drupal
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v3
       - name: Drupal package security scanner
         uses: lpeabody/drupal-security-action@1.0.0
