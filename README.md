@@ -13,7 +13,7 @@ solution that combines Gitpod, DDEV, JetBrains IDEs, and Drupal (plus multisite)
 
 ## Demo
 
-1. Install JetBrains Gateway Gitpod plugin (follow instructions here https://www.gitpod.io/docs/ides-and-editors/jetbrains-gateway).
+1. Install JetBrains Gateway Gitpod plugin (follow instructions here https://plugins.jetbrains.com/plugin/18438-gitpod-gateway).
 2. Click the "Open in Gitpod" button at the top of this page.
 3. Wait for the workspace to be created.
 4. When prompted, allow the browser to open the JetBrains Gateway client on your system.
