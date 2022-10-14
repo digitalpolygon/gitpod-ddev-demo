@@ -1,0 +1,7 @@
+site_name: Gitpod DDEV Demo Documentation
+
+nav:
+  - Home: index.md
+
+plugins:
+  - techdocs-core
