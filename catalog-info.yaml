@@ -6,4 +6,4 @@ metadata:
 spec:
   type: website
   lifecycle: experimental
-  owner: lpeabody
+  owner: group:backend-guild
