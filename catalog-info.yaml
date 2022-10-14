@@ -1,0 +1,9 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: gitpod-ddev-demo
+  description: Demonstration of a Gitpod environment for Drupal multisite, backed by DDEV.
+spec:
+  type: website
+  lifecycle: experimental
+  owner: lpeabody
