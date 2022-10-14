@@ -6,4 +6,4 @@ metadata:
 spec:
   type: website
   lifecycle: experimental
-  owner: backend-guild
+  owner: group:backend-guild
