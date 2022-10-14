@@ -3,6 +3,9 @@ kind: Component
 metadata:
   name: gitpod-ddev-demo
   description: Demonstration of a Gitpod environment for Drupal multisite, backed by DDEV.
+  annotations:
+    github.com/project-slug: digitalpolygon/gitpod-ddev-demo
+    backstage.io/techdocs-ref: dir:.
 spec:
   type: website
   lifecycle: experimental
