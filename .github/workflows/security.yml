@@ -2,26 +2,12 @@ name: Security
 
 on:
   push:
-    branches: [main]
+    branches: [main, feature/reuse-security-workflow]
   pull_request:
     branches: [main]
   schedule:
     - cron: '0 3 * * *'
 
 jobs:
-  composer:
-    name: Composer
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: The PHP Security Checker
-        uses: symfonycorp/security-checker-action@v3
-  drupal:
-    name: Drupal
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Drupal package security scanner
-        uses: lpeabody/drupal-security-action@1.0.0
+  drupal_security:
+    uses: digitalpolygon/github-actions-library/.github/workflows/drupal_security.yml@main
