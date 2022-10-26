@@ -11,4 +11,4 @@ on:
 jobs:
   drupal_security:
     name: Drupal project security
-    uses: digitalpolygon/github-actions-library/.github/workflows/drupal_security.yml@1
+    uses: digitalpolygon/github-actions-library/.github/workflows/drupal_security.yml@^1
