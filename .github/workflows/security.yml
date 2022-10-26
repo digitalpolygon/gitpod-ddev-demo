@@ -2,7 +2,7 @@ name: Security
 
 on:
   push:
-    branches: [main, feature/reuse-security-workflow]
+    branches: [main]
   pull_request:
     branches: [main]
   schedule:
